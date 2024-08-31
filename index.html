@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading and Review Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grading and Review Page (Teacher View)</h1>
+
+        <!-- Student Submissions List -->
+        <div class="submissions-list">
+            <h2>Student Submissions</h2>
+            <ul id="student-list">
+                <!-- Student list will be populated here -->
+            </ul>
+        </div>
+
+        <!-- Question-by-Question Grading -->
+        <div class="grading-section">
+            <h2>Question-by-Question Grading</h2>
+            <div id="question-grading">
+                <!-- Question grading details will be populated here -->
+            </div>
+        </div>
+
+        <!-- Automated Grading Review -->
+        <div class="automated-grading-review">
+            <h2>Automated Grading Review</h2>
+            <button onclick="reviewAutomatedGrading()">Review Automated Grading</button>
+        </div>
+
+        <!-- Feedback Input Fields -->
+        <div class="feedback-section">
+            <h2>Feedback</h2>
+            <textarea id="feedback" placeholder="Enter feedback here..."></textarea>
+        </div>
+
+        <!-- Grade Submission -->
+        <div class="grade-submission">
+            <button onclick="submitGrade()">Submit Grade</button>
+        </div>
+
+        <!-- Bulk Grading Options -->
+        <div class="bulk-grading">
+            <h2>Bulk Grading</h2>
+            <button onclick="bulkGrade()">Bulk Grade Submissions</button>
+        </div>
+
+        <!-- Regrade Option -->
+        <div class="regrade-section">
+            <h2>Regrade</h2>
+            <button onclick="regradeSubmission()">Regrade Submission</button>
+        </div>
+
+        <!-- Return to Student Button -->
+        <div class="return-to-student">
+            <button onclick="returnToStudent()">Return to Student</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
